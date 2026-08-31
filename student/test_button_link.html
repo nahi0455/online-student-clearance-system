@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Button Link</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 50px; background: #f5f5f5; }
+        .test-container { max-width: 400px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; text-align: center; }
+        .btn-update { 
+            background: linear-gradient(135deg, #8B5A2B, #A0522D); 
+            color: white; 
+            border: none; 
+            border-radius: 12px; 
+            padding: 14px 32px; 
+            font-weight: 600; 
+            font-size: 16px; 
+            width: 100%; 
+            text-decoration: none; 
+            display: inline-block; 
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(139, 90, 43, 0.3);
+        }
+        .btn-update:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 8px 25px rgba(139, 90, 43, 0.4); 
+            background: linear-gradient(135deg, #A0522D, #8B5A2B);
+            color: white;
+            text-decoration: none;
+        }
+        .fa { margin-right: 8px; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h2>Button Link Test</h2>
+        <p>This button should redirect to edit-photo.php when clicked:</p>
+        
+        <a href="edit-photo.php" class="btn-update">
+            <i class="fa fa-image"></i>
+            Select New Photo
+        </a>
+        
+        <p style="margin-top: 20px; font-size: 12px; color: #666;">
+            If this button works, then the profile.php button should also work.
+        </p>
+        
+        <p><a href="profile.php">← Back to Profile</a></p>
+    </div>
+</body>
+</html>
